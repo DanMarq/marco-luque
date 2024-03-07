@@ -43,7 +43,7 @@ export default function Bio () {
 
                     </Col>
                     <Col lg={6} className="d-flex align-items-center justify-content-center px-4">
-                        <animated.img src='/images/marco-luque.png' height={650} style={imageAnimation} alt='Imagem Animada' />
+                        <animated.img src='/images/marco-luque.png' width={500} style={imageAnimation} alt='Imagem Animada' className={'img-fluid'} />
                     </Col>
                 </Row>
             </Container>

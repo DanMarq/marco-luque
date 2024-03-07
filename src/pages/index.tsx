@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { Container, Col, Row } from 'react-bootstrap'
 
@@ -10,12 +9,13 @@ import Data from "@/components/Data";
 import Videos from "@/components/Videos";
 import Bio from "@/components/Bio";
 import Cta from "@/components/Cta";
+import Patrocinadores from "@/components/Patrocinadores";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Marco Luque | Dilatos</title>
+        <title>Marco Luque | Dilatados</title>
         <meta name="description" content="Marco Luque, renomado ator, humorista e empresário, apresenta o espetáculo 'Dilatados' dirigido por Guilherme Rocha. Conheça Mustafary, o vegetariano irônico, e Jackson Faive, o famoso motoboy paulistano, em uma performance que vai além do humor, incluindo música e dança." />
         <meta name='keywords' content='Marco Luque, Dilatados, Mustafary, Jackson Faive, CQC, Espetáculo de humor, Sustentabilidade, Motoboy paulistano, Versatilidade artística' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,26 +29,26 @@ export default function Home() {
       <main>
         <Logo />
 
-        <div className="faixa-ingressos py-lg-4 py-3" id="ingresso">
+        <div className="faixa-ingressos py-lg-1 py-3" id="ingresso">
           <h5>Garanta já o seu ingresso!!</h5>
         </div>
 
         <Container>
           <Row className="my-4">
             <Col className="p-4" xl={3}>
-              <Data cidade="Atlanta" dia="Monday, March 11th" link="#" />
+              <Data cidade="Atlanta" dia="Thursday, July 11, 2024" local="Venue: CENTER STAGE" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Boston" dia="Tuesday, March 12th" link="#" />
+              <Data cidade="Boston" dia="July 12, 2024" local="Venue: Lynn Memorial Auditorium" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Miami" dia="Wednesday, March 13th" link="#" />
+              <Data cidade="Miami" dia="Wednesday, March 13th" local="Venue: Lauderhill Performing Arts Center" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Orlando" dia="Thursday, March 14th" link="#" />
+              <Data cidade="Orlando" dia="Thursday, March 14th" local="Venue: Dr. Phillips Center for the Performing Arts" link="#" />
             </Col>
           </Row>
         </Container>
@@ -56,6 +56,7 @@ export default function Home() {
         <Videos />
         <Bio />
         <Cta />
+        <Patrocinadores />
       </main>
 
       <Footer/>

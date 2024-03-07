@@ -36,7 +36,15 @@ body {
     color: var(--white-color);
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 4rem;
+    font-family: Single Sleeve;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3)
+}
+
+@media (max-width: 500px) {
+    .faixa-ingressos h5 {   
+        font-size: 3rem;
+    }
 }
 
 .city-data {
@@ -53,6 +61,15 @@ body {
 
 .data {
     font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.location {
+    font-size: 1rem;
+    color: #fff500;
+    font-weight: 700;
+    line-height: normal;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4)
 }
 
 .placa-local {
@@ -75,6 +92,8 @@ body {
 .city-link .city-data {
     cursor: pointer;
     transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .city-link .city-data:hover {
@@ -145,6 +164,21 @@ body {
 
 .cta {
     background-color: var(--orange-color);
+}
+
+.container-patrocinadores {
+    background-color: var(--orange-color);
+}
+
+.slider-patrocinadores {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.separator {
+    border: 0;
+    border-bottom: 5px solid #2f282c;
+    border-radius: 1rem;
 }
 
 .footer {

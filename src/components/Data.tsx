@@ -4,6 +4,7 @@ interface DataProps {
     link: string
     cidade: string
     dia: string
+    local: string
 }
 
 export default function Data(props: DataProps) {
@@ -15,6 +16,7 @@ export default function Data(props: DataProps) {
                 <span>{props.cidade}</span>
               </div>
               <span className="data">{props.dia}</span>
+              <span className="location">{props.local}</span>
             </div>
         </Link>
     )
