@@ -15,13 +15,28 @@ export default function Patrocinadores () {
                 <h3 className='text-center title-videos text-white mb-5 text-uppercase'>Nossos patrocinadores</h3>
             <div className='slider-patrocinadores'>
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={4}
+                    spaceBetween={50}
                     autoplay={{
                         delay: 5500,
                         disableOnInteraction: false,
                       }}
                     modules={[Autoplay]}
                     className="mySwiper"
+                    breakpoints={{
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        425: {
+                            slidesPerView: 2,
+                        },
+                        375: {
+                            slidesPerView: 2,
+                        },
+                    }}
                 >
                 <SwiperSlide>
                     <Image src={'/images/patrocinadores/slider_01.png'} width={299} height={100} className='img-fluid' alt='Slider 01' />
