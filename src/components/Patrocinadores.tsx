@@ -5,9 +5,18 @@ import 'swiper/css/navigation';
 
 import Image from "next/image"
 
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 export default function Patrocinadores () {
+
+    const Slides = [
+        'slider_01.png',
+        'slider_02.png',
+        'slider_03.png',
+        'slider_04.png',
+        'slider_05.png',
+    ]
+
     return (
             
         <div className='container-patrocinadores pb-5'>
@@ -38,18 +47,11 @@ export default function Patrocinadores () {
                         },
                     }}
                 >
-                <SwiperSlide>
-                    <Image src={'/images/patrocinadores/slider_01.png'} width={299} height={100} className='img-fluid' alt='Slider 01' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/images/patrocinadores/slider_02.png'} width={299} height={100} className='img-fluid' alt='Slider 02' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/images/patrocinadores/slider_03.png'} width={299} height={100} className='img-fluid' alt='Slider 03' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={'/images/patrocinadores/slider_04.png'} width={299} height={100} className='img-fluid' alt='Slider 04' />
-                </SwiperSlide>
+                {Slides.map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <Image src={`/images/patrocinadores/${item}`} width={299} height={100} className='img-fluid' alt={`slider ${index}`} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
             </div>
         </div>

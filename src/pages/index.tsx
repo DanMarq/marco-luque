@@ -10,6 +10,7 @@ import Videos from "@/components/Videos";
 import Bio from "@/components/Bio";
 import Cta from "@/components/Cta";
 import Patrocinadores from "@/components/Patrocinadores";
+import Popup from "@/components/Popup";
 
 export default function Home() {
   return (
@@ -36,19 +37,19 @@ export default function Home() {
         <Container>
           <Row className="my-4">
             <Col className="p-4" xl={3}>
-              <Data cidade="Atlanta" dia="Thursday, July 11, 2024" local="Venue: CENTER STAGE" link="#" />
+              <Data cidade="Atlanta" dia="Thursday, July 11, 2024" local="CENTER STAGE" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Boston" dia="July 12, 2024" local="Venue: Lynn Memorial Auditorium" link="#" />
+              <Data cidade="Boston" dia="July 12, 2024" local="Lynn Memorial Auditorium" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Miami" dia="Wednesday, March 13th" local="Venue: Lauderhill Performing Arts Center" link="#" />
+              <Data cidade="Miami" dia="Wednesday, March 13th" local="Lauderhill Performing Arts Center" link="#" />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Orlando" dia="Thursday, March 14th" local="Venue: Dr. Phillips Center for the Performing Arts" link="#" />
+              <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center for the Performing Arts" link="#" />
             </Col>
           </Row>
         </Container>
@@ -58,6 +59,8 @@ export default function Home() {
         <Cta />
         <Patrocinadores />
       </main>
+
+      <Popup />
 
       <Footer/>
     </>

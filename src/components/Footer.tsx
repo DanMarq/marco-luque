@@ -3,12 +3,15 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import Whatsapp from "./Whatsapp";
 
 export default function Footer() {
+
+    const ano = new Date().getFullYear()
+
     return (
         <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-4">
             <Container>
                 <Row>
                     <Col md={6} className="d-flex align-items-center">
-                        <span className="mb-3 mb-md-0 text-muted">© 2024 Bis Entertainment, all rights reserved</span>
+                        <span className="mb-3 mb-md-0 text-muted">© {ano} Bis Entertainment, all rights reserved</span>
                     </Col>
                     <Col md={6} className="justify-content-lg-end justify-content-center d-flex">
                         <ul className="nav list-unstyled social">
