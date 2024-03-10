@@ -35,15 +35,23 @@ export default function Patrocinadores () {
                     breakpoints={{
                         1024: {
                             slidesPerView: 4,
+                            slidesPerGroup: 4,
                         },
                         768: {
                             slidesPerView: 3,
+                            slidesPerGroup: 3,
                         },
                         425: {
                             slidesPerView: 2,
+                            slidesPerGroup: 2,
                         },
                         375: {
                             slidesPerView: 2,
+                            slidesPerGroup: 2,
+                        },
+                        300: {
+                            slidesPerView: 2,
+                            slidesPerGroup: 2,
                         },
                     }}
                 >
