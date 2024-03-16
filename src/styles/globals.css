@@ -261,8 +261,8 @@ body {
 
 .popup-logo {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .store-buttons a { 
