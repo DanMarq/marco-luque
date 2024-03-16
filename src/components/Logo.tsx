@@ -20,6 +20,8 @@ export default function Logo() {
 
     return (
         <div className="d-flex flex-column align-items-center pb-lg-5 pb-3">
+            <Image src={'/images/sendwave_logo.png'} className='img-fluid present-logo' width={200} height={26} alt='sendwave logo'></Image>
+            <p className='present-text'>Presents</p>
             <animated.img style={imagem1} src={'/images/marco_luque_em_logo.png'} width={valoresTamanho} className='img-fluid' alt='Marco Luque Logo' />
             <Image src={'/images/personagens_marco_luke.png'} width={valoresTamanho} height={valoresTamanho} className='img-fluid' alt='Personagens de Marco Luque' />
             <animated.img style={imagem3} src={'/images/dilatados_logo.png'} width={valoresTamanho} className='img-fluid dilatados-logo' alt='Dilatados' />

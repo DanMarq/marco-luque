@@ -7,19 +7,48 @@ import Image from "next/image"
 
 import { Autoplay } from 'swiper/modules';
 
-export default function Patrocinadores () {
+interface PatrocinadoresProps {
+    background: boolean
+}
+
+export default function Patrocinadores (props: PatrocinadoresProps) {
 
     const Slides = [
-        'slider_01.png',
-        'slider_02.png',
-        'slider_03.png',
-        'slider_04.png',
-        'slider_05.png',
-    ]
+        {
+            imagem: 'slider_01.png',
+            link: 'https://www.sendwave.com/en-us',
+            alt: 'Sendwave'
+        },
+        {
+            imagem: 'slider_02.png',
+            link: 'https://www.inttelivacationhomes.com/',
+            alt: 'Intteli Vacation Homes'
+        },
+        {
+            imagem: 'slider_03.png',
+            link: 'https://phoenixbusorlando.com/',
+            alt: 'Phoenix Bus'
+        },
+        {
+            imagem: 'slider_04.png',
+            link: 'https://www.santoslloydlaw.com/',
+            alt: 'Santos Lloyd Law Firm, P.C.'
+        },
+        {
+            imagem: 'slider_05.png',
+            link: 'https://www.instagram.com/levittaconcepts/',
+            alt: 'Levitta Concepts'
+        },
+        {
+            imagem: 'slider_06.png',
+            link: 'https://www.instagram.com/bellastartravel',
+            alt: 'Bella Star Travel'
+        }
+    ];
 
     return (
             
-        <div className='container-patrocinadores pb-5'>
+        <div className={`${props.background ? 'container-patrocinadores' : ''} pb-5`}>
             <hr className='mt-0 w-50 mx-auto mb-4 separator' />
                 <h3 className='text-center title-videos text-white mb-5 text-uppercase'>Nossos patrocinadores</h3>
             <div className='slider-patrocinadores'>
@@ -57,7 +86,9 @@ export default function Patrocinadores () {
                 >
                 {Slides.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={`/images/patrocinadores/${item}`} width={299} height={100} className='img-fluid' alt={`slider ${index}`} />
+                        <a href={item.link} className='patrocinadores-link' target='_blank' title={'Clique para abrir'}>
+                            <Image src={`/images/patrocinadores/${item.imagem}`} width={299} height={100} className='img-fluid' alt={item.alt} />
+                        </a>
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -49,15 +49,15 @@ export default function Home() {
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center for the Performing Arts" link="#" />
+              <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center" link="#" />
             </Col>
           </Row>
+          <Patrocinadores background={false} />
         </Container>
-
         <Videos />
         <Bio />
         <Cta />
-        <Patrocinadores />
+        <Patrocinadores background={true} />
       </main>
 
       <Popup />
