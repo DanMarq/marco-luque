@@ -43,6 +43,16 @@ export default function Patrocinadores (props: PatrocinadoresProps) {
             imagem: 'slider_06.png',
             link: 'https://www.instagram.com/bellastartravel',
             alt: 'Bella Star Travel'
+        },
+        {
+            imagem: 'slider_07.png',
+            link: 'https://www.roteirovip.com/home/',
+            alt: 'Roteiro Vip'
+        },
+        {
+            imagem: 'slider_08.png',
+            link: '#',
+            alt: 'C4 Comunicação'
         }
     ];
 
@@ -54,9 +64,9 @@ export default function Patrocinadores (props: PatrocinadoresProps) {
             <div className='slider-patrocinadores'>
                 <Swiper
                     slidesPerView={4}
-                    spaceBetween={50}
+                    spaceBetween={30}
                     autoplay={{
-                        delay: 5500,
+                        delay: 2000,
                         disableOnInteraction: false,
                       }}
                     modules={[Autoplay]}
