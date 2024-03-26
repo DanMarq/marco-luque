@@ -301,7 +301,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .container-patrocinadores {
+    .container-patrocinadores, .container-patrocinadores-no-back  {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
@@ -362,5 +362,9 @@ body {
     h3 {
         line-height: 3.5rem !important;
         font-size: 3rem !important;
+    }
+
+    .header-email a {
+        font-size: 0.8rem;
     }
 }

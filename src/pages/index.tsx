@@ -29,11 +29,10 @@ export default function Home() {
 
       <main>
         <Logo />
-
+        <Patrocinadores background={false} />
         <div className="faixa-ingressos py-lg-1 py-3" id="ingresso">
           <h5>Garanta já o seu ingresso!!</h5>
         </div>
-
         <Container>
           <Row className="my-4">
             <Col className="p-4" xl={3}>
@@ -52,7 +51,6 @@ export default function Home() {
               <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center" link="#" />
             </Col>
           </Row>
-          <Patrocinadores background={false} />
         </Container>
         <Videos />
         <Bio />

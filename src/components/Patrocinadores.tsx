@@ -58,7 +58,7 @@ export default function Patrocinadores (props: PatrocinadoresProps) {
 
     return (
             
-        <div className={`${props.background ? 'container-patrocinadores' : ''} pb-5`}>
+        <div className={`${props.background ? 'container-patrocinadores' : 'container-patrocinadores-no-back'} pb-5`}>
             <hr className='mt-0 w-50 mx-auto mb-4 separator' />
                 <h3 className='text-center title-videos text-white mb-5 text-uppercase'>Nossos patrocinadores</h3>
             <div className='slider-patrocinadores'>
