@@ -1,7 +1,8 @@
 :root {
     --dark-color: #2f282c;
     --white-color: #fff;
-    --orange-color: #ff7700;
+    /* --primary-color: #ff7700; */
+    --primary-color: #740af6;
 }
 
 @font-face {
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-image: url('/images/BG-DILATADOS.jpg');
+    background-image: url('/images/BG-DILATADOS-ROXO.jpg');
 }
 
 .header-email {
@@ -29,7 +30,7 @@ body {
 }
 
 .faixa-ingressos {
-    background-color: var(--orange-color);
+    background-color: var(--primary-color);
 }
 
 .faixa-ingressos h5 {
@@ -146,7 +147,7 @@ body {
 }
 
 .bio {
-    background-image: url('/images/degrade.png');
+    background-image: url('/images/degrade-roxo.png');
     background-position: center;
     background-size: cover;
 }
@@ -163,11 +164,11 @@ body {
 }
 
 .cta {
-    background-color: var(--orange-color);
+    background-color: var(--primary-color);
 }
 
 .container-patrocinadores {
-    background-color: var(--orange-color);
+    background-color: var(--primary-color);
 }
 
 .slider-patrocinadores {
@@ -229,7 +230,7 @@ body {
 
 .popup-header button:hover {
     transform: scale(1.2);
-    color: var(--orange-color);
+    color: var(--primary-color);
 }
 
 .popup-content-one {
