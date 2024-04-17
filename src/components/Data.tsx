@@ -9,7 +9,7 @@ interface DataProps {
 
 export default function Data(props: DataProps) {
     return (
-        <Link href={props.link} className="city-link">
+        <Link href={props.link} target="_blank" className="city-link">
             <div className="city-data">
             <p>Tickets</p>
               <div className="placa-local">

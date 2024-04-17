@@ -13,6 +13,12 @@ import Patrocinadores from "@/components/Patrocinadores";
 import Popup from "@/components/Popup";
 
 export default function Home() {
+  const linksIngressos = {
+    atlanta: '#',
+    boston: 'https://www.tickets4way.com/event/1055/Marco_Luque_em_Dilatados_-_Boston',
+    miami: 'https://www.tickets4way.com/event/1054/Marco_Luque_em_Dilatados_-_Fort_Lauderdale',
+    orlando: '#',
+  };
   return (
     <>
       <Head>
@@ -36,19 +42,19 @@ export default function Home() {
         <Container>
           <Row className="my-4">
             <Col className="p-4" xl={3}>
-              <Data cidade="Atlanta" dia="Thursday, July 11, 2024" local="CENTER STAGE" link="#" />
+              <Data cidade="Atlanta" dia="Thursday, July 11, 2024" local="CENTER STAGE" link={linksIngressos.atlanta} />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Boston" dia="July 12, 2024" local="Lynn Memorial Auditorium" link="#" />
+              <Data cidade="Boston" dia="July 12, 2024" local="Lynn Memorial Auditorium" link={linksIngressos.boston} />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Miami" dia="Wednesday, March 13th" local="Lauderhill Performing Arts Center" link="#" />
+              <Data cidade="Miami" dia="Wednesday, March 13th" local="Lauderhill Performing Arts Center" link={linksIngressos.miami} />
             </Col>
 
             <Col className="p-4" xl={3}>
-              <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center" link="#" />
+              <Data cidade="Orlando" dia="Thursday, March 14th" local="Dr. Phillips Center" link={linksIngressos.orlando} />
             </Col>
           </Row>
         </Container>
