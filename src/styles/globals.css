@@ -205,9 +205,32 @@ body {
     min-width: 60rem;
 }
 
+.popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, 0.5s all;
+    min-width: 60rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .popup-content {
     display: flex;
     flex-direction: row;
+}
+
+.popup2.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 .popup.visible {
@@ -220,6 +243,9 @@ body {
     justify-content: right;
     padding-right: 1rem;
     padding-top: 1rem;
+    position: absolute;
+    top: 1%;
+    right: 23%;
 }
 
 .popup-header button {
@@ -310,6 +336,10 @@ body {
     .popup {
         min-width: 50rem;
     }
+
+    .popup2 {
+        min-width: 50rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -317,8 +347,16 @@ body {
         min-width: 30rem;
     }
 
+    .popup2 {
+        min-width: 30rem;
+    }
+
     .popup-content {
         flex-direction: column-reverse;
+    }
+
+    .popup-header {
+        right: 5%;
     }
 
     .popup-content-one {
@@ -338,6 +376,14 @@ body {
 @media (max-width: 500px) {
     .popup {
         min-width: 22rem;
+    }
+
+    .popup2 {
+        min-width: 22rem;
+    }
+
+    .popup-header {
+        right: 2%;
     }
 
     .popup-content-two h3 {

@@ -11,13 +11,14 @@ import Bio from "@/components/Bio";
 import Cta from "@/components/Cta";
 import Patrocinadores from "@/components/Patrocinadores";
 import Popup from "@/components/Popup";
+import PopupRepassado from "@/components/PopupRepassado";
 
 export default function Home() {
   const linksIngressos = {
-    atlanta: '#',
+    atlanta: 'https://www.centerstage-atlanta.com',
     boston: 'https://www.tickets4way.com/event/1055/Marco_Luque_em_Dilatados_-_Boston',
     miami: 'https://www.tickets4way.com/event/1054/Marco_Luque_em_Dilatados_-_Fort_Lauderdale',
-    orlando: '#',
+    orlando: 'https://tickets.drphillipscenter.org/syos/performance/20164',
   };
   return (
     <>
@@ -64,7 +65,7 @@ export default function Home() {
         <Patrocinadores background={true} />
       </main>
 
-      <Popup />
+      <PopupRepassado />
 
       <Footer/>
     </>
