@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 import { MdClose } from "react-icons/md";
 
 import { useState, useEffect } from "react";
@@ -34,7 +35,9 @@ export default function PopupRepassado () {
             </div>
             <div>
                 <div className="popup-content">
-                    <Image className="img-fluid" src={'/images/sw_banner.jpg'} width={560} height={840} alt=""></Image>  
+                    <Link href={'https://try.sendwave.com/kjap/LUQUE'} target="_blank" className="">
+                        <Image className="img-fluid" src={'/images/sw_banner.jpg'} width={560} height={840} alt=""></Image>  
+                    </Link>
                 </div>
             </div>
         </div>
